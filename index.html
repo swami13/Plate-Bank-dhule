@@ -2248,5 +2248,15 @@ window.addEventListener('DOMContentLoaded',()=>{
   dateInputs.forEach(el=>{if(!el.value&&!el.id.includes('ret-'))el.min=t;});
 });
 </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+const supabaseUrl = "YOUR_SUPABASE_URL";
+const supabaseKey = "YOUR_ANON_KEY";
+
+const supabaseClient = supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
+</script>
 </body>
 </html>
